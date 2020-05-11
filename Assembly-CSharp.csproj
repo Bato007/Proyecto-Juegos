@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\Manager.cs" />
+    <Compile Include="Assets\Sprites\Animation\Player\player_movement.cs" />
+    <Compile Include="Assets\Sprites\Animation\Zombie\zombie_movement.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
