@@ -53,26 +53,31 @@ public class player_movement : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.25f, groundLayer);
 
         //Para cuando salte
-        if (hit.collider != null)
+        if (hit.collider)
         {
             if (Input.GetKeyDown(KeyCode.Space) || movement.y == 1)
             {
                 isJumping = true;
-                rb.AddForce(Vector2.up * 1f, ForceMode2D.Impulse);
+                Jump();
             }
         }
 
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Se revisa que haya intentado saltar, de lo contrario se ignora
-        if (isJumping)
+        if (other.gameObject.CompareTag("Grada_Abajo"))
         {
-            print("se hace");
-        } else
+            gameObject.transform.position = new Vector2(10.78f, 1.92f);
+        }else if (other.gameObject.CompareTag("Grada_Arriba") && Input.GetButtonDown("Jump"))
         {
-            Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), other.GetComponent<Collider2D>());
+            gameObject.transform.position = new Vector2(5.07f, -3.15f);
         }
+    }
+
+    private void Jump()
+    {
+        if (Mathf.Abs(rb.velocity.y) < 0.05f)
+            rb.AddForce(new Vector2(0, 5f), ForceMode2D.Impulse);
     }
 
 }
