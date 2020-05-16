@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ZombieFX
+  - Grada_Arriba
+  - Grada_Abajo
   layers:
   - Default
   - TransparentFX
@@ -14,9 +17,9 @@ TagManager:
   - 
   - 
   - ZombieLayer
-  - 
-  - 
-  - 
+  - PlayerLayer
+  - Background
+  - Character
   - 
   - 
   - 
@@ -41,6 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG
+    uniqueID: 602084507
+    locked: 0
   - name: Zombies
     uniqueID: 3354118477
+    locked: 0
+  - name: Player
+    uniqueID: 632224625
     locked: 0
