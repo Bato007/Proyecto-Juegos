@@ -7,6 +7,10 @@ TagManager:
   - ZombieFX
   - Grada_Arriba
   - Grada_Abajo
+  - Fog
+  - Pause_Menu
+  - CampBox
+  - Manager
   layers:
   - Default
   - TransparentFX
@@ -47,9 +51,15 @@ TagManager:
   - name: BG
     uniqueID: 602084507
     locked: 0
+  - name: Decoration
+    uniqueID: 563793759
+    locked: 0
   - name: Zombies
     uniqueID: 3354118477
     locked: 0
   - name: Player
     uniqueID: 632224625
+    locked: 0
+  - name: Decoration_Up
+    uniqueID: 2645487761
     locked: 0
