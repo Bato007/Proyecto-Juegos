@@ -19,6 +19,7 @@ public class player_movement : MonoBehaviour
     void Update()
     {
         //Se obtiene la velocidad en x (y no se necesitara)
+
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
@@ -49,30 +50,33 @@ public class player_movement : MonoBehaviour
         }
         
 
-        //Raycast para cuando salte
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.25f, groundLayer);
+
 
         //Para cuando salte
-        if (hit.collider)
-        {
-            if (Input.GetKeyDown(KeyCode.Space) || movement.y == 1)
-            {
+        if (Input.GetKeyDown(KeyCode.Space) || movement.y == 1) {
                 isJumping = true;
                 Jump();
-            }
         }
 
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Grada_Abajo"))
+        if (isJumping)
         {
-            gameObject.transform.position = new Vector2(10.78f, 1.92f);
-        }else if (other.gameObject.CompareTag("Grada_Arriba") && Input.GetButtonDown("Jump"))
-        {
-            gameObject.transform.position = new Vector2(5.07f, -3.15f);
+            if (other.gameObject.CompareTag("Grada_Abajo"))
+            {
+                gameObject.transform.position = new Vector2(10.78f, 1.92f);
+            }
+            else if (other.gameObject.CompareTag("Grada_Arriba"))
+            {
+                gameObject.transform.position = new Vector2(5.07f, -3.15f);
+            }
+            isJumping = false;
         }
+
+        
     }
+
 
     private void Jump()
     {

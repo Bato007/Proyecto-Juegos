@@ -11,6 +11,7 @@ TagManager:
   - Pause_Menu
   - CampBox
   - Manager
+  - Stair
   layers:
   - Default
   - TransparentFX

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,6 +22,8 @@ public class Night1 : MonoBehaviour
         if (collision.gameObject.CompareTag("ZombieFX"))
         {
             collision.gameObject.GetComponent<AudioSource>().Play();
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
+
     }
 }
