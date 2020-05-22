@@ -9,13 +9,11 @@ public class Camera_Runner : MonoBehaviour
 
     void Awake()
     {
-        /*Size*/
-        GetComponent<UnityEngine.Camera>().orthographicSize = ((Screen.height / 2) / cameraDistance);
     }
     void Update()
     {
         /*Boundaries*/
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -4.9f, 4.9f), Mathf.Clamp(transform.position.y, 0f, 0f), transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -6f, 6f), Mathf.Clamp(transform.position.y, 0f, 0f), transform.position.z);
     }
     void FixedUpdate()
     {

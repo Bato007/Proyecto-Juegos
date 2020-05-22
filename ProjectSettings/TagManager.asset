@@ -12,6 +12,8 @@ TagManager:
   - CampBox
   - Manager
   - Stair
+  - PlayerItem
+  - Arrow
   layers:
   - Default
   - TransparentFX
