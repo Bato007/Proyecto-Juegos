@@ -17,6 +17,8 @@ public class player_movement : MonoBehaviour
     public GameObject wp;
     private int bullets = 0;
 
+    private int maxSpeed = 2;
+
    
 
     // Update is called once per frame
@@ -78,24 +80,31 @@ public class player_movement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        
+
+        //Para cuando salte
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
+        {
+            isJumping = true;
+            Jump();
+        }
+
+        if (rb)
+            rb.AddForce(new Vector2(Input.GetAxis("Horizontal") * moveSpeed, 0));
+
+
+
     }
     void FixedUpdate()
     {
-        //Se mueve si no es salto
-        if(movement.y != 1)
-        {
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        }
+        //Se mueve a los lados
+
         
 
+        rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x, -maxSpeed, maxSpeed), Mathf.Clamp(rb.velocity.y, -maxSpeed, maxSpeed));
 
 
-        //Para cuando salte
-        if (Input.GetKeyDown(KeyCode.Space) || movement.y == 1) {
-                isJumping = true;
-                Jump();
-        }
+
+       
 
 
 
@@ -150,7 +159,7 @@ public class player_movement : MonoBehaviour
 
     private void Jump()
     {
-        if (Mathf.Abs(rb.velocity.y) < 0.05f)
+        if (Mathf.Abs(rb.velocity.y) < 0.005f)
             rb.AddForce(new Vector2(0, 5f), ForceMode2D.Impulse);
     }
 
