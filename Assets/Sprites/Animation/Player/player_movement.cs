@@ -12,8 +12,12 @@ public class player_movement : MonoBehaviour
     public LayerMask groundLayer;
     public GameObject arrow;
     private bool isJumping = false;
-    private bool shovel = false;
-    private bool rock = false;
+    public bool shovel = false;
+    public bool rock = false;
+    public GameObject wp;
+    private int bullets = 0;
+
+   
 
     // Update is called once per frame
     private void Start()
@@ -41,9 +45,11 @@ public class player_movement : MonoBehaviour
 
         if (Input.GetButtonDown("Dig"))
         {
-            if (rock)
+            if (shovel)
             {
                 animator.SetBool("Shovel", true);
+                if (SceneManager.GetActiveScene().buildIndex == 3)
+                    CheckTreasure();
             }
         }
         else
@@ -147,5 +153,17 @@ public class player_movement : MonoBehaviour
         if (Mathf.Abs(rb.velocity.y) < 0.05f)
             rb.AddForce(new Vector2(0, 5f), ForceMode2D.Impulse);
     }
+
+    private void CheckTreasure()
+    {
+        if(transform.position.x > 1.06 && transform.position.x < 2.6)
+        {
+            bullets++;
+            wp.SetActive(false);
+
+        }
+
+    }
+
 
 }
