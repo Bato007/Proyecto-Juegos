@@ -16,7 +16,6 @@ public class player_movement : MonoBehaviour
     public bool rock = false;
     public GameObject wp;
     private int bullets = 0;
-
     private int maxSpeed = 2;
 
    

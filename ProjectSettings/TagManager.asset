@@ -16,6 +16,8 @@ TagManager:
   - Arrow
   - TPL
   - TPR
+  - Wood2
+  - Wood1
   layers:
   - Default
   - TransparentFX

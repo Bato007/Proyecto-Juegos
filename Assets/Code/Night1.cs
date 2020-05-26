@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class Night1 : MonoBehaviour
 {
+    public AudioSource ambiental;
     // Start is called before the first frame update
     void Start()
     {
+        ambiental.Play();
     }
 
     // Update is called once per frame

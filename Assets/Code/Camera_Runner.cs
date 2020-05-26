@@ -13,7 +13,7 @@ public class Camera_Runner : MonoBehaviour
     void Update()
     {
         /*Boundaries*/
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -6f, 6f), Mathf.Clamp(transform.position.y, 0f, 0f), transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -3f, 3f), Mathf.Clamp(transform.position.y, 0f, 0f), transform.position.z);
     }
     void FixedUpdate()
     {
