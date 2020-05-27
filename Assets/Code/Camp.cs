@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Camp : MonoBehaviour
 {
 
     static private int campHP = 0;
     public GameObject box_trigger;
+    public GameObject option;
     
 
     // Start is called before the first frame update
@@ -43,18 +45,37 @@ public class Camp : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
+        option.SetActive(true);
+
         if (collision.gameObject.CompareTag("Player"))
         {
-            campHP = 80;
-            showCamp();
-            collision.gameObject.transform.position = new Vector2(1.55f, -2.41f);
 
-            box_trigger.GetComponent<BoxCollider2D>().enabled = true;
+            if (Input.GetKeyDown(KeyCode.R)){
+                gameObject.GetComponent<AudioSource>().Play();
+                campHP = 80;
+                showCamp();
+                collision.gameObject.transform.position = new Vector2(1.55f, -2.41f);
+
+                box_trigger.GetComponent<BoxCollider2D>().enabled = true;
+            } else if (Input.GetKeyDown(KeyCode.F)) 
+            {
+                campHP = 60;
+                showCamp();
+                collision.gameObject.transform.position = new Vector2(1.55f, -2.41f);
+
+                box_trigger.GetComponent<BoxCollider2D>().enabled = true;
+            }
+            
         }
        
 
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        option.SetActive(false);    
     }
 
     private void showCamp()

@@ -19,8 +19,18 @@ public class Inventory_Box : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        nextScene.GetComponent<BoxCollider2D>().enabled = true;
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+        }
+   
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        nextScene.SetActive(true);
+    }
+
 }
