@@ -17,6 +17,7 @@ public class player_movement : MonoBehaviour
     public GameObject wp;
     private int bullets = 0;
     private int maxSpeed = 2;
+    public float jumpForce = 5.0f;
 
    
 
@@ -159,7 +160,7 @@ public class player_movement : MonoBehaviour
     private void Jump()
     {
         if (Mathf.Abs(rb.velocity.y) < 0.005f)
-            rb.AddForce(new Vector2(0, 5f), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
     }
 
     private void CheckTreasure()

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9039557356118580950}
   m_Layer: 11
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -940848819
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -8083343602665665930, guid: 242096c5db80a144a8728c70e274c32d,
     type: 3}
@@ -124,6 +124,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
+  arrow: {fileID: 0}
+  shovel: 0
+  rock: 0
+  wp: {fileID: 0}
 --- !u!114 &9039557356118580948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6862abbcd2571e5469bff5cdd47eefc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ambiental: {fileID: 0}
 --- !u!50 &9039557356118580777
 Rigidbody2D:
   serializedVersion: 4
