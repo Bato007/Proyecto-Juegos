@@ -159,7 +159,7 @@ public class player_movement : MonoBehaviour
 
     private void Jump()
     {
-        if (Mathf.Abs(rb.velocity.y) < 0.005f)
+        if (Mathf.Abs(rb.velocity.y) < 0.005f && Time.timeScale>0.0f)
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
     }
 
@@ -174,5 +174,6 @@ public class player_movement : MonoBehaviour
 
     }
 
+   
 
 }
