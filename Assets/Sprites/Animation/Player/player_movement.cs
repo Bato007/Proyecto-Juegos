@@ -14,6 +14,7 @@ public class player_movement : MonoBehaviour
     private bool isJumping = false;
     public  bool shovel = false;
     public  bool rock = false;
+    public bool isGunAllowed = false;
     public GameObject wp;
     private int bullets = 0;
     private int maxSpeed = 2;
@@ -59,6 +60,17 @@ public class player_movement : MonoBehaviour
             animator.SetBool("Shovel", false);
         }
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (isGunAllowed)
+            {
+                animator.SetBool("Gun", true);
+            }
+        } else
+        {
+            animator.SetBool("Gun", false);
+        }
+
 
 
 
@@ -82,7 +94,7 @@ public class player_movement : MonoBehaviour
 
 
         //Para cuando salte
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             isJumping = true;
             Jump();

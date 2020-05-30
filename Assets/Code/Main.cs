@@ -22,5 +22,8 @@ public class Main : MonoBehaviour
     {
         SceneManager.LoadScene(indexScene);
     }
-
+    public void QuitGame()
+    {
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
 }
