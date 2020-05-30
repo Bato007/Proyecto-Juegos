@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Night 2.unity
     guid: 85b69bffc9995ed47aff6021367f6cdb
+  - enabled: 1
+    path: Assets/Scenes/Night 3.unity
+    guid: 28458701fbe4f5b4f91aa8478a8c03a2
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 13893be40f8d8424daf9dd36cd07e0b4
   m_configObjects: {}

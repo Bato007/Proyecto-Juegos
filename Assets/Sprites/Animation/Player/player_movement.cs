@@ -12,8 +12,8 @@ public class player_movement : MonoBehaviour
     public LayerMask groundLayer;
     public GameObject arrow;
     private bool isJumping = false;
-    public bool shovel = false;
-    public bool rock = false;
+    public  bool shovel = false;
+    public  bool rock = false;
     public GameObject wp;
     private int bullets = 0;
     private int maxSpeed = 2;
@@ -174,6 +174,5 @@ public class player_movement : MonoBehaviour
 
     }
 
-   
-
+ 
 }

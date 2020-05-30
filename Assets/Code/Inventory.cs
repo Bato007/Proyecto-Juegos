@@ -11,7 +11,6 @@ public class Inventory : MonoBehaviour
     public GameObject rock;
     private player_movement play;
     
-    
 
     // Start is called before the first frame update
     void Start()
