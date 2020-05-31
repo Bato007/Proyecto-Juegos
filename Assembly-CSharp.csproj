@@ -78,6 +78,7 @@
     <Compile Include="Assets\Code\Scene_Manager.cs" />
     <Compile Include="Assets\Code\TP.cs" />
     <Compile Include="Assets\Code\Wall.cs" />
+    <Compile Include="Assets\Code\ZombieSpawn.cs" />
     <Compile Include="Assets\Code\nextScene.cs" />
     <Compile Include="Assets\Sprites\Animation\Player\player_movement.cs" />
     <Compile Include="Assets\Sprites\Animation\Zombie\zombie_movement.cs" />

@@ -74,9 +74,15 @@ public class player_movement : MonoBehaviour
                 if (Physics.Raycast(myRay, out hitInfo))
                 {
 
-                    
-                        Destroy(hitInfo.collider.gameObject);      
-                    
+                    if (hitInfo.collider.CompareTag("Zombie"))
+                    {
+                        Destroy(hitInfo.collider.gameObject);
+                    } else if (hitInfo.collider.CompareTag("Boss"))
+                    {
+                        Destroy(hitInfo.collider.gameObject);
+                    }
+
+
                 }
 
             }

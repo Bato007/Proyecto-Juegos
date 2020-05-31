@@ -21,7 +21,7 @@ public class Wall : MonoBehaviour
         Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>();
 
         // Si es el player lo deja pasar
-        if (collision.gameObject.CompareTag("Zombie"))
+        if (collision.gameObject.CompareTag("Zombie") || collision.gameObject.CompareTag("Boss"))
         {
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
         }
