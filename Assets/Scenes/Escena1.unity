@@ -2582,8 +2582,12 @@ MonoBehaviour:
   dialogue:
     name: Dia 1
     sentences:
-    - "holaaaa\t"
-    - aaaa
+    - "Es un buen d\xEDa para acampar."
+    - Buscare en donde armarla.
+    - 'Luego buscare algunas balas. '
+    - Este lugar es peligros.
+    - 'Debo de andar con cuidado. '
+    - "Muchos desaparecen aqu\xED."
 --- !u!1 &1531571363
 GameObject:
   m_ObjectHideFlags: 0

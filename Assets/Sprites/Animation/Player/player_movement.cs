@@ -77,9 +77,11 @@ public class player_movement : MonoBehaviour
                     if (hit.collider.CompareTag("Zombie"))
                     {
                         Destroy(hit.collider.gameObject);
-                    } else if (hit.collider.CompareTag("Boss"))
+                    } 
+                    
+                    if (hit.collider.CompareTag("Boss"))
                     {
-                        Destroy(hit.collider.gameObject);
+                        
                     }
                 }
 

@@ -53,6 +53,10 @@ public class zombie_movement : MonoBehaviour
         }
     }
 
+    public void DealDamage()
+    {
+        hpBoos--;
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
