@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Main : MonoBehaviour
 {
     public AudioSource ambiental;
+    public GameObject commands;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,10 @@ public class Main : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            commands.SetActive(false);
+        }
     }
 
     public void ChangeScene(int indexScene)
@@ -25,5 +29,9 @@ public class Main : MonoBehaviour
     public void QuitGame()
     {
         UnityEditor.EditorApplication.isPlaying = false;
+    }
+    public void ShowCommands()
+    {
+        commands.SetActive(true);
     }
 }
