@@ -5,30 +5,16 @@ using UnityEngine;
 public class zombie_movement : MonoBehaviour
 {
 
-    private int hpBoos;
-    public GameObject finalObject;
-
     public LayerMask enemyLayer;
     private bool right = true;
     public float distance;
     public float speed;
     private Transform tf;
-    public GameObject gameOver;
 
     // Start is called before the first frame update
     void Start()
     {
         tf = GetComponent<Transform>();
-        hpBoos = 30;
-    }
-
-    void Update()
-    {
-        if(hpBoos < 0)
-        {
-            finalObject.SetActive(true);
-            Destroy(gameObject);
-        }
     }
 
     void FixedUpdate()
@@ -53,17 +39,11 @@ public class zombie_movement : MonoBehaviour
         }
     }
 
-    public void DealDamage()
-    {
-        hpBoos--;
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
-            gameOver.SetActive(true);
         }
         else if (collision.gameObject.CompareTag("Zombie"))
         {
