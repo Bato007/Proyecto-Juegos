@@ -59,5 +59,9 @@ public class zombie_movement : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+        else if (collision.gameObject.CompareTag("Zombie"))
+        {
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+        }
     }
 }
