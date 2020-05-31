@@ -1070,6 +1070,7 @@ MonoBehaviour:
   arrow: {fileID: 1949567433}
   shovel: 1
   rock: 1
+  isGunAllowed: 0
   wp: {fileID: 0}
   jumpForce: 5
 --- !u!61 &1252894907743370609

@@ -19,8 +19,9 @@ public class player_movement : MonoBehaviour
     private int bullets = 0;
     private int maxSpeed = 2;
     public float jumpForce = 5.0f;
+    public GameObject gameOver;
 
-   
+
 
     // Update is called once per frame
     private void Start()
@@ -68,21 +69,18 @@ public class player_movement : MonoBehaviour
             {
                 animator.SetBool("Gun", true);
 
-                Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hitInfo;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
 
-                if (Physics.Raycast(myRay, out hitInfo))
+                if (hit.collider != null)
                 {
-
-                    if (hitInfo.collider.CompareTag("Zombie"))
+                    if (hit.collider.CompareTag("Zombie"))
                     {
-                        Destroy(hitInfo.collider.gameObject);
-                    } else if (hitInfo.collider.CompareTag("Boss"))
+                        Destroy(hit.collider.gameObject);
+                    } else if (hit.collider.CompareTag("Boss"))
                     {
-                        Destroy(hitInfo.collider.gameObject);
+                        Destroy(hit.collider.gameObject);
                     }
-
-
                 }
 
             }

@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 584039092}
   - component: {fileID: 584039094}
   - component: {fileID: 584039093}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Grada_Abajo
   m_TagString: Grada_Abajo
   m_Icon: {fileID: 0}
@@ -797,6 +797,7 @@ MonoBehaviour:
   arrow: {fileID: 1130093626}
   shovel: 0
   rock: 0
+  isGunAllowed: 0
   wp: {fileID: 0}
   jumpForce: 5
 --- !u!82 &702615682
@@ -1166,7 +1167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1734261949}
   - component: {fileID: 1734261948}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1348,7 +1349,7 @@ GameObject:
   - component: {fileID: 2079583653}
   - component: {fileID: 2079583655}
   - component: {fileID: 2079583654}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Grada_Arriba
   m_TagString: Grada_Arriba
   m_Icon: {fileID: 0}

@@ -47,11 +47,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9270ff4cbbba34e977ece6a0b7b62f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalObject: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256
   distance: 10
   speed: 2
+  gameOver: {fileID: 741715963886844392, guid: 185c4235664c94d4f9acc7faa471ab46, type: 3}
 --- !u!212 &1533866731909337031
 SpriteRenderer:
   m_ObjectHideFlags: 0

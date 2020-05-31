@@ -13,6 +13,7 @@ public class zombie_movement : MonoBehaviour
     public float distance;
     public float speed;
     private Transform tf;
+    public GameObject gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,7 @@ public class zombie_movement : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
+            gameOver.SetActive(true);
         }
         else if (collision.gameObject.CompareTag("Zombie"))
         {
