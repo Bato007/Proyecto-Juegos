@@ -18,6 +18,8 @@ TagManager:
   - TPR
   - Wood2
   - Wood1
+  - Zombie
+  - Boss
   layers:
   - Default
   - TransparentFX

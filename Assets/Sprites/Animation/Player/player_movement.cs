@@ -60,12 +60,28 @@ public class player_movement : MonoBehaviour
             animator.SetBool("Shovel", false);
         }
 
+        // Disparo JEJEJEJE
         if (Input.GetMouseButtonDown(0))
         {
+            
             if (isGunAllowed)
             {
                 animator.SetBool("Gun", true);
+
+                Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hitInfo;
+
+                if (Physics.Raycast(myRay, out hitInfo))
+                {
+
+                    
+                        Destroy(hitInfo.collider.gameObject);      
+                    
+                }
+
             }
+
+
         } else
         {
             animator.SetBool("Gun", false);

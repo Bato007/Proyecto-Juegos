@@ -3289,6 +3289,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventory
       objectReference: {fileID: 0}
+    - target: {fileID: 4852767842036009120, guid: b4710588b4f42834cb95adb39199e4e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4852767842036009121, guid: b4710588b4f42834cb95adb39199e4e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3514,7 +3519,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9039557356695541589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.33, y: -2.573175, z: 0}
+  m_LocalPosition: {x: 0.05, y: -2.573175, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3694,5 +3699,6 @@ MonoBehaviour:
   arrow: {fileID: 0}
   shovel: 1
   rock: 1
+  isGunAllowed: 0
   wp: {fileID: 1481372551}
   jumpForce: 5
