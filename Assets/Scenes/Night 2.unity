@@ -1068,11 +1068,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   arrow: {fileID: 1949567433}
-  shovel: 1
-  rock: 1
+  shovel: 0
+  rock: 0
   isGunAllowed: 0
   wp: {fileID: 0}
   jumpForce: 5
+  gameOver: {fileID: 0}
 --- !u!61 &1252894907743370609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1967,7 +1968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4852767842910890727
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4193,6 +4194,9 @@ MonoBehaviour:
     - 'Haz uso de la madera
 
       que tienes!'
+    - 'Y vete corriendo
+
+      de aqui!'
 --- !u!1 &7477638632182096835
 GameObject:
   m_ObjectHideFlags: 0
@@ -4664,9 +4668,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Noche 2
-
-'
+  m_Text: "PERO QU\xC9 HA PASADO?"
 --- !u!222 &7477638632413220566
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class Night1 : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         //Se escucha el sonido del zombie en la ventana
         if (collision.gameObject.CompareTag("ZombieFX"))
@@ -26,6 +26,5 @@ public class Night1 : MonoBehaviour
             collision.gameObject.GetComponent<AudioSource>().Play();
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
-
     }
 }

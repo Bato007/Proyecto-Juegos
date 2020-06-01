@@ -377,6 +377,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4852767842470234232, guid: b4710588b4f42834cb95adb39199e4e3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852767842470234232, guid: b4710588b4f42834cb95adb39199e4e3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4852767842470234235, guid: b4710588b4f42834cb95adb39199e4e3,
         type: 3}
       propertyPath: m_Layer
@@ -800,6 +810,7 @@ MonoBehaviour:
   isGunAllowed: 0
   wp: {fileID: 0}
   jumpForce: 5
+  gameOver: {fileID: 0}
 --- !u!82 &702615682
 AudioSource:
   m_ObjectHideFlags: 0
@@ -812,7 +823,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 66534409975514140a679f257ce083a7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.104
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1461,9 +1472,12 @@ MonoBehaviour:
   dialogue:
     name: Noche 1
     sentences:
-    - "Felicidades! \nEncontraste la entrada \nal castillo\t"
-    - "Sube las gradas y ve \na recoger la pala y \nla piedra\t"
-    - Suerte con tu aventura!
+    - "Pero qu\xE9 es esto?"
+    - "Mira! Arriba hay una pala\ny una piedra\t"
+    - 'Vamos a recogerlas, por
+
+      cualquier cosa'
+    - "Ten cuidado! No sabemos\nlo que puede haber aqu\xED"
 --- !u!222 &2597005053222995257
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1781,7 +1795,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Noche 1
+  m_Text: Un castillo en el bosque?
 --- !u!224 &2597005054423605001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3037,7 +3051,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3296,7 +3310,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
