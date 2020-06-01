@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GoToTitle : MonoBehaviour
 {
     public GameObject text;
+    public GameObject back;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,8 @@ public class GoToTitle : MonoBehaviour
     }
     public void Congratulations()
     {
+        back.SetActive(false);
         text.SetActive(true);
+
     }
 }

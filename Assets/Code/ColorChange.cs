@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class ColorChange : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    
     public void OnPointerEnter(PointerEventData eventData)
     {
         GetComponent<Text>().color = Random.ColorHSV(0f,1f,1f,1f,0.5f,1f);
