@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 508, y: 392}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 0
-  controlID: 510
+  controlID: 317
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -51,10 +51,8 @@ MonoBehaviour:
     width: 670
     height: 354
   m_ViewDataDictionary: {fileID: 0}
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_SerializedCustomFieldsNames: []
-  m_SerializedCustomFieldsValues: []
+  m_SerializedViewsNames: []
+  m_SerializedViewsValues: []
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
@@ -64,7 +62,6 @@ MonoBehaviour:
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
   m_MaximizeOnPlay: 1
-  m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -141,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 392}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 488
+  controlID: 318
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 121}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 489
+  controlID: 297
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +221,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1cf5ffff2af7ffffa83a0000583b0000
+      m_ExpandedIDs: 90efffff26f2ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -267,8 +264,8 @@ MonoBehaviour:
     y: 0
     width: 672
     height: 375
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
@@ -381,7 +378,7 @@ MonoBehaviour:
     m_EasingEnabled: 1
     m_EasingDuration: 0.4
     m_AccelerationEnabled: 1
-    m_FieldOfViewHorizontalOrVertical: 60
+    m_FieldOfView: 90
     m_NearClip: 0.03
     m_FarClip: 10000
     m_DynamicClip: 1
@@ -543,10 +540,8 @@ MonoBehaviour:
     width: 669
     height: 353
   m_ViewDataDictionary: {fileID: 0}
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_SerializedCustomFieldsNames: []
-  m_SerializedCustomFieldsValues: []
+  m_SerializedViewsNames: []
+  m_SerializedViewsValues: []
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
@@ -556,7 +551,6 @@ MonoBehaviour:
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
   m_MaximizeOnPlay: 1
-  m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -675,20 +669,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Code
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Code
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\reque\UnityProjects\Proyecto-Juegos
+  m_LastProjectPath: D:\Programacion\Unity\Proyecto
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 46}
-    m_SelectedIDs: d23b0000
-    m_LastClickedID: 15314
-    m_ExpandedIDs: 00000000c03b0000c23b000000ca9a3b
+    m_SelectedIDs: 163e0000
+    m_LastClickedID: 15894
+    m_ExpandedIDs: 00000000103e0000123e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -716,7 +710,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c03b0000c23b000000ca9a3b
+    m_ExpandedIDs: 00000000103e0000123e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -741,8 +735,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: e63e0000
-    m_LastClickedInstanceID: 16102
+    m_SelectedInstanceIDs: 0c460000
+    m_LastClickedInstanceID: 17932
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300006e3d000024470000a4390000923e000000000000fe430000
     m_RenameOverlay:
@@ -860,5 +854,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 16102
-  m_LastVerticalScrollValue: 0
+  m_LastInspectedObjectInstanceID: 17932
+  m_LastVerticalScrollValue: 100
