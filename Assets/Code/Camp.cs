@@ -61,7 +61,6 @@ public class Camp : MonoBehaviour
                 box_trigger.GetComponent<BoxCollider2D>().enabled = true;
             } else if (Input.GetKeyDown(KeyCode.F)) 
             {
-                gameObject.GetComponent<AudioSource>().Play();
                 campHP = 60;
                 showCamp();
                 collision.gameObject.transform.position = new Vector2(1.55f, -2.41f);
